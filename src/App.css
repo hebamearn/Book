@@ -1,0 +1,195 @@
+*{
+  font-family: "Pacifico", serif;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: rgb(177, 75, 75);
+}
+html{
+  font-size: 75.5%;
+}
+.header{
+  width: 100%;
+  height: 500px;
+  color: rgb(215, 174, 174);
+  box-shadow: 0 8px 10px rgb(215, 174, 174) ;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.row2{
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  text-align: center;
+}
+.row2 h2{
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.row2 img{
+  margin-top: 100px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+
+}
+.header h1{
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 35px;
+
+}
+.header::before{
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width:100%;
+  height: 100%;
+  background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(./assets/books2.jpeg);
+  clip-path: circle(60% at left 300px);
+  z-index: -1;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search input{
+  outline: 0;
+  border: 0;
+  width: 350px;
+  height: 35px;
+  padding: 0 0.5rem;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 150px;
+  margin-left: 50px;
+  margin-right: -100px;
+
+}
+.search button{
+  outline: none;
+  border: none;
+  height: 35px;
+  padding: 0 0.5rem;
+  margin-bottom: 150px;
+  margin-left: 100px;
+  margin-right: -240px;
+}
+.container{
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 25px;
+  display:grid;
+  grid-template-columns: repeat(4,minmax(200px,0.5fr));
+  grid-gap:20px;
+  box-sizing: border-box;
+}
+.card{
+  background-color:  rgb(215, 174, 174);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px  rgb(224, 156, 156);
+  transition: .5s;
+  text-align: center;
+  position: relative;
+}
+.card:hover{
+  transform: scale(0.9);
+  background-color: rgba(255,255, 255, 0.8);
+}
+ .card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem 1rem 0 0;
+ }
+ .bottom{
+  display: flex;
+  flex-direction: column;
+ }
+ .bottom .title{
+  font-size: 14px;
+  margin-bottom: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .bottom .amount{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color:  rgb(177, 75, 75);;
+  color: blanchedalmond;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0.2 rem;
+
+ }
+ .overlay{
+  min-height: 100vh;
+  width: 100%;
+  position: fixed;
+  left:0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ }
+ .overlay-inner{
+  background: white;
+  width: 700px;
+  height: 550px;
+  padding: 1.5rem;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 1.3rem;
+ }
+ .close{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  background-color: transparent;
+ }
+ .inner-box{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+ }
+ .inner-box h3{
+  margin-top: 10px;
+  color: green;
+  font-family: 'Times New Roman', Times, serif
+ }
+ .inner-box h4{
+  color: blue;
+  font-family: 'Times New Roman', Times, serif
+ }
+ .inner-box button{
+  outline: none;
+  border:none;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #24a0ed;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ .description{
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+ }
